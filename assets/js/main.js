@@ -11,3 +11,11 @@ fetch(api)
     console.log(err);
     footertxt.textContent = "there is some errors while fetching datas";
   });
+
+const agreeBtn = document.querySelector("#agreeBtn");
+const agreesection = document.querySelector("#agreesection");
+
+
+agreeBtn.addEventListener("click", () => {
+  agreesection.classList.add("hidden");
+})
